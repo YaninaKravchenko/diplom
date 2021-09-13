@@ -1,0 +1,507 @@
+@font-face {
+  font-family: 'Merriweather';
+  src: url('font/Merriweather-Italic/Merriweather-Italic.eot');
+  src: url('font/Merriweather-Italic/Merriweather-Italic.eot?#iefix') format('embedded-opentype'), url('font/Merriweather-Italic/Merriweather-Italic.woff2') format('woff2'), url('font/Merriweather-Italic/Merriweather-Italic.woff') format('woff'), url('font/Merriweather-Italic/Merriweather-Italic.ttf') format('truetype'), url('font/Merriweather-Italic/Merriweather-Italic.svg#Merriweather-Italic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+.logo-taxi {
+  color: #08A120;
+  font-weight: bold;
+}
+.taxi {
+  text-decoration: none;
+  cursor: pointer;
+}
+.container-menu {
+  background: url('img/tesla-most-priroda.jpg');
+  background-size: cover;
+  padding-top: 10px;
+  color: black;
+  font-weight: bold;
+}
+.container {
+  font-family: 'Merriweather';
+  margin-top: auto;
+  margin-left: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.menu-contact {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.logo-tesla {
+  float: left;
+  width: 32px;
+  height: 32px;
+  margin-right: 5px;
+  margin-bottom: 15px;
+  transition: all 5s ease-in-out;
+}
+.logo-tesla:hover {
+  transform: scale(-1);
+}
+.logo p {
+  margin: 0;
+  text-align: center;
+}
+.logo p:last-of-type {
+  font-size: 10px;
+}
+.logo p span {
+  color: #08A120;
+  font-weight: bold;
+}
+.logo-car {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  animation-name: logo-car;
+  animation-duration: 10s;
+}
+@keyframes logo-car {
+  from {
+    opacity: 0;
+    transform: translateX(1500px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.tel {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.phone-number {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 15px;
+}
+.phone-number:hover .menu-phone {
+  display: block;
+}
+.phone-number:hover .phone-number-button {
+  background-color: #08A120;
+}
+.phone-number-button {
+  color: white;
+  font-size: 25px;
+  font-family: 'Merriweather';
+  cursor: pointer;
+  padding: 15px 65px;
+  text-decoration: none;
+  background: #08A120;
+  border: 3px solid black;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+.menu-phone {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+}
+.menu-phone a {
+  display: block;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+.menu-phone a:hover {
+  background-color: lightgrey;
+  border-radius: 15px;
+}
+.icon-phone {
+  margin-top: 20px;
+  margin-right: 10px;
+}
+.application {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  color: whitesmoke;
+}
+.application p span {
+  color: #08A120;
+  font-weight: bold;
+}
+.application-link a:visited {
+  color: black;
+}
+.application-link a:hover {
+  color: #08a120;
+  text-decoration: none;
+}
+.link {
+  display: flex;
+  text-align: center;
+  margin-right: 20px;
+  text-decoration: none;
+}
+.link img {
+  border: 3px solid;
+  border-radius: 10%;
+  padding: 10px;
+}
+.link p {
+  margin-left: 10px;
+}
+.link p:first-child {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.link p:last-child {
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.online-order {
+  text-align: center;
+  margin: 20px;
+}
+.online-order .btn {
+  margin-top: 20px;
+  padding: 15px 25px;
+  text-decoration: none;
+  background: #08A120;
+  color: white;
+  font-size: 20px;
+  border: 3px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.online-order a:hover {
+  color: #08A120;
+  background: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.line {
+  border-bottom: 5px solid #08A120;
+}
+.container {
+  padding: 16px;
+  text-align: center;
+}
+.form-login label,
+.container label {
+  display: block;
+}
+input[type=text],
+input[type=password] {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+button {
+  background-color: #08A120;
+  color: whitesmoke;
+  padding: 14px 20px;
+  margin: 8px 0;
+  cursor: pointer;
+  width: 30%;
+  border-radius: 10px;
+}
+button:hover {
+  background-color: whitesmoke;
+  color: #08A120;
+}
+.address {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-family: 'Merriweather';
+  grid-row-gap: 20px;
+  grid-column-gap: 50px;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.telephone-address p {
+  font-size: 25px;
+  -webkit-text-stroke: 1px #08A120;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.map {
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+@media (min-width: 320px) and (max-width: 599px) {
+ .taxi {
+    text-decoration: none; 
+    cursor: pointer; 
+}
+.container {
+    box-sizing: border-box;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.menu-contact {
+    display: block;
+    margin-top: 0px;
+}
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2px;
+    padding: 5px;
+}
+.logo-tesla {
+    padding-left: 5px;
+    padding-right: 15px;
+    margin-bottom: 5px;
+}
+.logo p {
+    margin: 0;
+    text-align: center; 
+} 
+.logo p:last-of-type {
+  font-size: 10px;
+  padding-right: 10px
+}
+.logo span {
+  padding-right: 10px;
+}
+.logo-car {
+    animation-duration: 5s;
+}
+@keyframes logo-car {
+    from {
+        transform: translateX(300px);
+       }
+       to {
+        transform: none;
+    }
+}
+.tel {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+.icon-phone {
+    margin-top: 0px;
+    text-align: right;
+}
+.phone-number {
+text-align: left;
+margin-top: 0px;
+font-size: 15px;
+}
+.phone-number:hover .menu-phone {
+  display: block;
+}
+.phone-number-button {
+text-align: center;
+font-size: 20px;
+padding: 10px 35px;
+border: 2px solid black;
+}
+.menu-phone {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+border-radius: 15px;
+}
+.menu-phone a {
+padding: 6px 8px;
+}
+.phone-number  p {
+display:none; 
+}
+.application {
+display: grid;
+grid-template-rows: 1fr;
+grid-template-columns: 1fr 1fr;
+box-sizing: border-box;
+row-gap: 0;
+column-gap: 0;
+margin-left: 0px
+} 
+.link img {
+border: none;
+padding: 5px;
+} 
+.link p {
+  margin-left: 10px;
+}
+.link p:first-child {
+  font-size: 12px;
+}
+.line p:last-child {
+  font-size: 8px;
+}
+
+.online-order {
+margin: 0px;
+padding-top: 10px;
+}
+.online-order .btn {
+margin-top: 10px;
+padding: 7px 15px;
+font-size: 15px;
+border: 2px solid black;
+border-radius: 5px;
+}  
+.online-order a:hover {
+background:  white;
+text-decoration: none;
+font-weight: bold;
+}
+  }
+@media (min-width: 600px) and (max-width: 900px) {
+.container {
+  box-sizing: border-box;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.menu-contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 15px;
+  font-size: 20px;
+}
+.logo-car {
+  animation-duration: 7s;
+}
+  @keyframes logo-car {
+      from {
+          transform: translateX(1000px);
+          }
+      to {
+          transform: none;
+          }
+}
+.tel {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.menu-phone {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+}
+
+.icon-phone {
+  margin-top: 20px;
+  margin-right: 10px;
+}
+.application {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+}
+.link {
+  display: flex;
+  text-align: center;
+  margin-right: 20px;
+  text-decoration: none; 
+}
+.link img {
+  border: 3px solid;
+  border-radius: 10%;
+  padding: 10px;
+} 
+.online-order {
+  text-align: center;
+  margin: 20px;
+}
+.application {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  box-sizing: border-box;
+  row-gap: 0;
+  column-gap: 0;
+  margin-left: 0px
+} 
+.link img {
+  border: none;
+  padding: 5px;
+} 
+.online-order {
+  margin: 0px;
+  padding-top: 10px;
+}
+.online-order .btn {
+  margin-top: 10px;
+  padding: 10px 15px;
+  font-size: 17px;
+  border: 3px solid black;
+  border-radius: 5px;
+}  
+.bottom-header {
+  margin: 10px;
+  font-size: 20px;
+}
+
+.address h1 {
+  font-size: 17px;
+} 
+.address p {
+  font-size: 17px;
+}
+  }
+
+  @media (min-width: 901px) and (max-width: 1320px) {
+.menu-contact {
+  flex-wrap: wrap;
+}
+.phone-number {
+  font-size: 13px;
+  }
+.phone-number-button {
+  padding: 12px 55px;
+}
+.application {
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+} 
+.link img {
+  border: none;
+  padding: 10px;
+} 
+.online-order {
+  margin: 10px;
+ 
+}
+.online-order .btn {
+  margin-top: 20px;
+  padding: 10px 15px;
+  font-size: 15px;
+}
+  }
+  

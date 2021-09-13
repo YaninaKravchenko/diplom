@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registration-form.css">
+    <title>Регистрация</title>
+</head>
+<body>   
+  <div class="container">
+    <h1>Форма регистрации</h1>
+           <p>Пожалуйста, заполните эту форму, чтобы создать учетную запись. Укажите Ваш номер мобильного телефона в международном формате, например: 375441234567. В дальнейшем Вы сможете использовать этот номер при авторизации. </p>
+        <p>Для защиты Вашей учетной записи мы вышлем на Ваш мобильный телефон сообщение с кодом подтверждения.</p>
+      <div class="form-registration">
+        <form method="GET">
+          <div class="mob-tel">       
+            <label for="mob-tel">Мобильный телефон</label>
+              <input type="number" placeholder="Ведите номер мобильного телефона" id="mob-tel" required>
+                  <button type="button" class="code-tel">Получить код подтверждения</button>
+            <label for="code">Код подтверждения</label>
+              <input type="text" placeholder="Код подтверждения" id="code" required></div>
+            <div class="login">
+              <label for="name">Имя</label>
+              <input type="password" placeholder="Ваше имя" id="name" required>
+            <label for="psw">Пароль</label>
+              <input type="password" placeholder=" Ведите пароль" id="psw" required>
+            <label for="psw-repeat">Повторите пароль</label>
+              <input type="password" placeholder="Повторите пароль" id="psw-repeat" required></div>
+          </form>
+      </div>
+        <p>Создавая учетную запись, вы соглашаетесь с нашим <a href="#" style="color:#08a120">Условием и конфиденциальностью</a>.</p>
+          <div class="registration-button">
+            <button type="button" class="ok-registration">Зарегистрироваться</button>
+          </div></div>
+</body>
+</html>
+

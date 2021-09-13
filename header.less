@@ -1,0 +1,206 @@
+@font-face {
+    font-family: 'Merriweather';
+    src: url('font/Merriweather-Italic/Merriweather-Italic.eot');
+    src: url('font/Merriweather-Italic/Merriweather-Italic.eot?#iefix') format('embedded-opentype'),
+        url('font/Merriweather-Italic/Merriweather-Italic.woff2') format('woff2'),
+        url('font/Merriweather-Italic/Merriweather-Italic.woff') format('woff'),
+        url('font/Merriweather-Italic/Merriweather-Italic.ttf') format('truetype'),
+        url('font/Merriweather-Italic/Merriweather-Italic.svg#Merriweather-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+@color-text: whitesmoke;
+@color-main: #08A120;
+
+.logo-taxi {
+    color: @color-main;
+    font-weight: bold;
+}
+.taxi {
+    text-decoration: none; 
+    cursor: pointer; 
+}
+.container-menu {
+    /*background: #054e05;*/
+    background: url('img/tesla-most-priroda.jpg');
+    background-size: cover;
+    padding-top: 10px;
+    /*font-weight: bold;*/
+    color: black;
+    font-weight: bold;
+}
+.container {
+    font-family: 'Merriweather';
+    margin-top: auto;
+    margin-left: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.menu-contact {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.logo-tesla {
+    float:left;
+    width:32px;
+    height:32px;
+    margin-right:5px;
+    margin-bottom: 15px;
+    transition: all 5s ease-in-out; 
+        &:hover {
+    transform: scale(-1);
+    }
+}
+.logo p {
+    margin: 0;
+    text-align: center;  
+        &:last-of-type {
+            font-size: 10px;
+    }
+        & span {
+        .logo-taxi;  
+    }
+}
+
+.logo-car {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0; 
+    animation-name: logo-car;
+    animation-duration: 10s;
+}
+
+@keyframes logo-car {
+    from {
+        opacity: 0;
+        transform: translateX(1500px);
+       }
+       to {
+        opacity: 1;
+        transform: none;
+    }
+}
+.tel {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.phone-number {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+        &:hover .menu-phone {
+            display: block;
+        }
+        &:hover .phone-number-button {
+            background-color: @color-main;
+        }
+}
+.phone-number-button {
+    color: white;
+    font-size: 25px;
+    font-family: 'Merriweather';
+    cursor: pointer;
+    padding: 15px 65px;
+    text-decoration: none;
+    background:  @color-main;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.menu-phone {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+}
+.menu-phone a {
+    display: block;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+        &:hover {
+            background-color: lightgrey;
+            border-radius: 15px;
+        }
+}
+.icon-phone {
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.application {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    color: @color-text;
+} 
+.application p span {
+    .logo-taxi;  
+}
+.application-link a {
+        &:visited {
+            color: black; 
+        }
+        &:hover {
+            color: #08a120;
+            text-decoration: none;
+           }
+}
+.link {
+    display: flex;
+    text-align: center;
+    margin-right: 20px;
+    text-decoration: none; 
+}
+.link img {
+    border: 3px solid;
+    border-radius: 10%;
+    padding: 10px;
+} 
+.link p {
+    margin-left: 10px;
+        &:first-child {
+            font-size: 20px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        &:last-child {
+            font-size: 15px;
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+}
+.online-order {
+ text-align: center;
+ margin: 20px;
+}
+.online-order .btn {
+    margin-top: 20px;
+    padding: 15px 25px;
+    text-decoration: none;
+    background:  @color-main;
+    color: white; 
+    font-size: 20px;
+    border: 3px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.online-order a:hover {
+    color: @color-main;
+    background:  white;
+    text-decoration: none;
+    font-weight: bold;
+}
